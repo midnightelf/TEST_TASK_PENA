@@ -1,0 +1,2 @@
+(1) для добавления нового поставщика надо создать новый класс поставщика
+в `App\Carriers\Factories`. (2) класс поставщика должен реализовывать интерфейс `App\Interfaces\CarrierFactoryInterface`. (3) после создания класса поставщика его необходимо зарегестрировать в `App\Models\Delivery::$carriers` в формате `[short_name => CarrierFactory::class]`.
